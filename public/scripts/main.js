@@ -71,8 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const name = formData.get("nombre")?.toString().trim() || "Contacto";
       const email = formData.get("email")?.toString().trim() || "";
       const message = formData.get("mensaje")?.toString().trim() || "";
-      const subject = encodeURIComponent(`Contacto portfolio - ${name}`);
-      const body = encodeURIComponent(`${message}\n\nNombre: ${name}\nEmail: ${email}`);
+      const subject = encodeURIComponent(`Contacto desde portfolio - ${name}`);
+      const body = encodeURIComponent(
+        `Hola Sabin,\n\n${message}\n\n---\nNombre: ${name}\nEmail: ${email}\nOrigen: Portfolio web`
+      );
 
       window.location.href = `mailto:sabin.maniuk@gmail.com?subject=${subject}&body=${body}`;
     });
