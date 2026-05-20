@@ -3,203 +3,274 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sabin Maniuc | Desarrollador de Aplicaciones</title>
-  <meta name="description" content="Portfolio de Sabin Maniuc, desarrollador de aplicaciones Java y frontend en Madrid." />
+  <title>Sabin Maniuc | Java Developer, Soporte IT y Operaciones</title>
+  <meta name="description" content="Portfolio profesional de Sabin Maniuc, desarrollador de aplicaciones Java con experiencia en soporte IT, operaciones, SQL e implantacion de software." />
+  <meta name="theme-color" content="#0f7b45" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css" />
   <link rel="icon" href="/assets/favicon.ico" />
 </head>
 <body>
-  <header class="header">
-    <div class="container header__inner">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio">SM</a>
-      <button class="nav__toggle" type="button" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir men&uacute;">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="nav" aria-label="Navegaci&oacute;n principal">
-        <ul id="navMenu" class="nav__list">
-          <li><a class="nav__link" href="#sobre-mi">Sobre m&iacute;</a></li>
-          <li><a class="nav__link" href="#experiencia">Experiencia</a></li>
-          <li><a class="nav__link" href="#educacion">Educaci&oacute;n</a></li>
-          <li><a class="nav__link" href="#habilidades">Habilidades</a></li>
-          <li><a class="nav__link" href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="inicio">
-    <section class="hero section">
-      <div class="container hero__inner">
-        <div class="hero__content fade-in">
-          <span class="eyebrow">Disponible para oportunidades en Madrid y remoto</span>
-          <h1>Sabin Maniuc</h1>
-          <p class="hero__subtitle">Desarrollador de aplicaciones Java con enfoque frontend y mentalidad de producto.</p>
-          <p class="hero__lead">Construyo soluciones claras, mantenibles y orientadas al usuario. Me interesa crecer en equipos donde pueda aportar energ&iacute;a, criterio t&eacute;cnico y ganas reales de aprender.</p>
-          <div class="hero__actions" aria-label="Acciones principales">
-            <a class="btn btn--primary" href="#contacto">Contactar</a>
-            <a class="btn btn--secondary" href="/assets/imagenes/CV_Sabin_maniuc_2025.pdf" download>Descargar CV</a>
-          </div>
-        </div>
-        <div class="hero__media fade-in">
-          <img src="/assets/imagenes/imagen_perfil.jpg" alt="Foto de Sabin Maniuc" />
-          <div class="status-card" aria-label="Perfil profesional">
-            <strong>Java Developer</strong>
-            <span>Aplicaciones, bases de datos y frontend</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sobre-mi" class="section">
-      <div class="container section-grid fade-in">
-        <div>
-          <span class="section-kicker">Perfil</span>
-          <h2 class="section__title">Sobre m&iacute;</h2>
-        </div>
-        <div class="section-copy">
-          <p>Soy un joven profesional de 21 a&ntilde;os apasionado por la inform&aacute;tica, con una fuerte motivaci&oacute;n por seguir aprendiendo y creciendo en el sector IT.</p>
-          <p>Destaco por mi capacidad para resolver problemas de manera eficiente, mi actitud proactiva y mi compromiso con el trabajo en equipo. Busco oportunidades que me permitan aplicar mis conocimientos t&eacute;cnicos mientras desarrollo nuevas habilidades en entornos din&aacute;micos y desafiantes.</p>
-          <ul class="tags" aria-label="Fortalezas">
-            <li>Proactividad</li>
-            <li>Trabajo en equipo</li>
-            <li>Organizaci&oacute;n</li>
-            <li>Responsabilidad</li>
-            <li>Agilidad</li>
+  <div class="site-shell">
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span>SM</span>
+        </a>
+        <button class="nav__toggle" type="button" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir men&uacute;">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav" aria-label="Navegaci&oacute;n principal">
+          <ul id="navMenu" class="nav__list">
+            <li><a class="nav__link" href="#sobre-mi">Perfil</a></li>
+            <li><a class="nav__link" href="#competencias">Competencias</a></li>
+            <li><a class="nav__link" href="#experiencia">Experiencia</a></li>
+            <li><a class="nav__link" href="#stack">Stack</a></li>
+            <li><a class="nav__link nav__link--cta" href="#contacto">Contacto</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section id="experiencia" class="section section--alt">
-      <div class="container fade-in">
-        <span class="section-kicker">Trayectoria</span>
-        <h2 class="section__title">Experiencia</h2>
-        <ol class="timeline" aria-label="L&iacute;nea de tiempo de experiencia">
-          <li class="timeline__item card">
-            <div class="card__meta">03/2024 - 10/2024 &middot; Madrid</div>
-            <h3>Desarrollador de Aplicaciones &middot; Devoteam</h3>
-            <ul class="card__list">
-              <li>Desarrollo y mejora de una aplicaci&oacute;n de gesti&oacute;n de datos para el SEPE utilizando Java.</li>
-              <li>Optimizaci&oacute;n de bases de datos para mejorar rendimiento y eficiencia.</li>
-              <li>Mejoras frontend orientadas a experiencia de usuario.</li>
-              <li>Identificaci&oacute;n y correcci&oacute;n de errores backend.</li>
-              <li>Pruebas funcionales para asegurar calidad y estabilidad.</li>
-              <li>Colaboraci&oacute;n en despliegues de nuevas versiones.</li>
-            </ul>
-          </li>
-          <li class="timeline__item card">
-            <div class="card__meta">2024 &middot; Madrid</div>
-            <h3>T&eacute;cnico Microinform&aacute;tico &middot; Vodafone</h3>
-            <ul class="card__list">
-              <li>Diagn&oacute;stico y resoluci&oacute;n de incidencias t&eacute;cnicas.</li>
-              <li>Reparaci&oacute;n y mantenimiento de hardware y software.</li>
-              <li>Soporte t&eacute;cnico con tiempos de respuesta &aacute;giles.</li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-    </section>
+    <main id="inicio">
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__copy reveal">
+            <p class="eyebrow">Disponible presencial/remoto &middot; Fuenlabrada, Madrid</p>
+            <h1>Sabin Maniuc</h1>
+            <p class="hero__subtitle">Desarrollador de aplicaciones con experiencia real en Java, soporte IT, operaciones e implantaci&oacute;n de software.</p>
+            <p class="hero__lead">Combino base de programaci&oacute;n con visi&oacute;n operativa: entiendo la incidencia, analizo el entorno y busco una soluci&oacute;n funcional para el usuario y para el negocio.</p>
+            <div class="hero__actions" aria-label="Acciones principales">
+              <a class="btn btn--primary" href="#contacto">Contactar</a>
+              <a class="btn btn--secondary" href="/assets/imagenes/CV_Sabin_Maniuc_052026.pdf" download>Descargar CV</a>
+            </div>
+            <dl class="hero__metrics" aria-label="Resumen profesional">
+              <div>
+                <dt>Java</dt>
+                <dd>Desarrollo y mantenimiento</dd>
+              </div>
+              <div>
+                <dt>2025</dt>
+                <dd>Operaciones IT actuales</dd>
+              </div>
+              <div>
+                <dt>SQL</dt>
+                <dd>Datos, soporte y analisis</dd>
+              </div>
+            </dl>
+          </div>
 
-    <section id="educacion" class="section">
-      <div class="container fade-in">
-        <span class="section-kicker">Formaci&oacute;n</span>
-        <h2 class="section__title">Educaci&oacute;n</h2>
-        <div class="education-grid">
-          <article class="card">
-            <div class="card__meta">2025 - Actual</div>
-            <h3>Evolve Academy</h3>
-            <p>M&aacute;ster en Desarrollo Web Fullstack</p>
-          </article>
-          <article class="card">
-            <div class="card__meta">2022 - 2024</div>
-            <h3>Campus FP</h3>
-            <p>Desarrollo de Aplicaciones Multiplataforma</p>
-          </article>
-          <article class="card">
-            <div class="card__meta">2020 - 2022</div>
-            <h3>Campus FP</h3>
-            <p>T&eacute;cnico en Sistemas Microinform&aacute;ticos y Redes</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="habilidades" class="section section--alt">
-      <div class="container fade-in">
-        <span class="section-kicker">Stack</span>
-        <h2 class="section__title">Habilidades</h2>
-        <div class="skills-layout">
-          <article class="skill-panel">
-            <h3>Lenguajes</h3>
-            <div class="skill-list">
-              <span>Java</span><span>JavaScript</span><span>SQL</span><span>Python</span><span>PHP</span><span>Kotlin</span>
+          <div class="hero__visual reveal">
+            <img src="/assets/imagenes/imagen_perfil.jpg" alt="Foto profesional de Sabin Maniuc" />
+            <div class="availability">
+              <span class="availability__dot"></span>
+              <div>
+                <strong>Java &middot; Soporte IT &middot; Operaciones</strong>
+                <span>Backend, SQL, redes, TPV, PDAs y usuarios</span>
+              </div>
             </div>
-          </article>
-          <article class="skill-panel">
-            <h3>Frameworks y web</h3>
-            <div class="skill-list">
-              <span>Spring Boot</span><span>React</span><span>HTML</span><span>CSS</span>
-            </div>
-          </article>
-          <article class="skill-panel">
-            <h3>Datos y sistemas</h3>
-            <div class="skill-list">
-              <span>MySQL</span><span>MongoDB</span><span>Windows</span><span>Linux</span><span>Android</span>
-            </div>
-          </article>
-          <article class="skill-panel">
-            <h3>Herramientas</h3>
-            <div class="skill-list">
-              <span>Office</span><span>Access</span><span>Testing</span><span>Soporte t&eacute;cnico</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacto" class="section contact-section">
-      <div class="container contact-grid fade-in">
-        <div>
-          <span class="section-kicker">Contacto</span>
-          <h2 class="section__title">Hablemos</h2>
-          <p class="contact-copy">Si tienes una oportunidad, una entrevista o un proyecto donde encaje mi perfil, puedes escribirme directamente.</p>
-          <div class="contact-links">
-            <a href="tel:+34658686380">+34 658 686 380</a>
-            <a href="mailto:sabin.maniuk@gmail.com">sabin.maniuk@gmail.com</a>
-            <a href="https://www.linkedin.com/in/sabin-maniuc/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com/sabinmaniuc" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
-        <form class="contact-form">
-          <label>
-            <span>Nombre</span>
-            <input type="text" name="nombre" autocomplete="name" required />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" autocomplete="email" required />
-          </label>
-          <label>
-            <span>Mensaje</span>
-            <textarea name="mensaje" rows="5" required></textarea>
-          </label>
-          <button class="btn btn--primary" type="submit">Enviar mensaje</button>
-        </form>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <span>&copy; <span id="year"></span> Sabin Maniuc</span>
-      <a href="#inicio">Volver arriba</a>
-    </div>
-  </footer>
+      <section id="sobre-mi" class="section profile-section">
+        <div class="container split-layout reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Sobre m&iacute;</p>
+            <h2>Perfil t&eacute;cnico junior con experiencia real y enfoque resolutivo.</h2>
+          </div>
+          <div class="profile-copy">
+            <p>Me adapto r&aacute;pido, trabajo bien en equipo y mantengo una actitud constante de mejora. Busco aportar en proyectos donde pueda crecer como desarrollador, participar en mantenimiento evolutivo y resolver problemas t&eacute;cnicos con criterio.</p>
+            <p>Mi perfil une desarrollo, soporte e implantaci&oacute;n: puedo moverme entre c&oacute;digo, bases de datos, usuarios, configuraci&oacute;n de sistemas y seguimiento de incidencias hasta su resoluci&oacute;n.</p>
+            <ul class="strengths" aria-label="Fortalezas profesionales">
+              <li>Resoluci&oacute;n de incidencias</li>
+              <li>An&aacute;lisis de procesos</li>
+              <li>Comunicaci&oacute;n con usuarios</li>
+              <li>Aprendizaje r&aacute;pido</li>
+              <li>Orientaci&oacute;n a calidad</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="competencias" class="section value-section">
+        <div class="container reveal">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow">Competencias</p>
+            <h2>Un perfil h&iacute;brido para desarrollo, soporte t&eacute;cnico y mejora operativa.</h2>
+          </div>
+          <div class="value-grid">
+            <article class="feature-card">
+              <span class="feature-card__number">01</span>
+              <h3>Desarrollo y mantenimiento</h3>
+              <p>Experiencia con aplicaciones Java, l&oacute;gica de negocio, depuraci&oacute;n, revisi&oacute;n de c&oacute;digo, pruebas funcionales y apoyo en despliegues.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__number">02</span>
+              <h3>Soporte e implantaci&oacute;n</h3>
+              <p>Configuraci&oacute;n de software, PDAs, TPV y perif&eacute;ricos, con atenci&oacute;n a usuarios y seguimiento de incidencias hasta su cierre.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__number">03</span>
+              <h3>Datos, sistemas y procesos</h3>
+              <p>Consultas SQL, revisi&oacute;n de informaci&oacute;n, Active Directory, dominios, usuarios, permisos, redes y an&aacute;lisis de mejoras.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencia" class="section timeline-section">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Experiencia laboral</p>
+            <h2>De aplicaciones Java a operaciones IT en entornos reales.</h2>
+          </div>
+          <ol class="timeline" aria-label="Experiencia profesional">
+            <li class="timeline__item">
+              <div class="timeline__date">2025 - Actualidad</div>
+              <article class="experience-card">
+                <div>
+                  <p class="role-meta">Codisys</p>
+                  <h3>T&eacute;cnico de Operaciones</h3>
+                </div>
+                <p>Implantaci&oacute;n, configuraci&oacute;n y soporte de software para restauraci&oacute;n, trabajando con Codyshop, herramientas internas, TPV, PDAs, perif&eacute;ricos, SQL, Active Directory y redes.</p>
+                <ul class="result-list">
+                  <li>Configuraci&oacute;n y puesta en marcha de PDAs, TPV y perif&eacute;ricos.</li>
+                  <li>Edici&oacute;n y ajuste de c&oacute;digo para adaptar funcionalidades y resolver incidencias.</li>
+                  <li>Atenci&oacute;n t&eacute;cnica a usuarios y seguimiento hasta resoluci&oacute;n.</li>
+                </ul>
+              </article>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__date">03/2024 - 12/2024</div>
+              <article class="experience-card">
+                <div>
+                  <p class="role-meta">Devoteam</p>
+                  <h3>Desarrollador de Aplicaciones</h3>
+                </div>
+                <p>Desarrollo y mantenimiento de aplicaciones con Java, an&aacute;lisis de requisitos e incidencias, funcionalidades backend, consultas SQL, mejoras frontend, pruebas funcionales y documentaci&oacute;n t&eacute;cnica b&aacute;sica.</p>
+                <ul class="result-list">
+                  <li>Implementaci&oacute;n de funcionalidades backend y ajustes en l&oacute;gica de negocio.</li>
+                  <li>Consultas, revisi&oacute;n y optimizaci&oacute;n de datos en bases relacionales.</li>
+                  <li>Depuraci&oacute;n de errores, revisi&oacute;n de c&oacute;digo y apoyo en despliegues.</li>
+                </ul>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="stack" class="section skills-section">
+        <div class="container reveal">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow">Stack t&eacute;cnico</p>
+            <h2>Tecnolog&iacute;as y herramientas alineadas con mi CV.</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-block skill-block--featured">
+              <h3>Lenguajes</h3>
+              <div class="skill-tags">
+                <span>Java</span><span>JavaScript</span><span>Python</span><span>PHP</span><span>SQL</span><span>Kotlin</span>
+              </div>
+            </article>
+            <article class="skill-block">
+              <h3>Frameworks y web</h3>
+              <div class="skill-tags">
+                <span>Spring Boot</span><span>React</span><span>HTML5</span><span>CSS3</span><span>Responsive design</span>
+              </div>
+            </article>
+            <article class="skill-block">
+              <h3>Bases de datos</h3>
+              <div class="skill-tags">
+                <span>SQL</span><span>MySQL</span><span>MongoDB</span><span>Access</span>
+              </div>
+            </article>
+            <article class="skill-block">
+              <h3>Sistemas y soporte</h3>
+              <div class="skill-tags">
+                <span>Windows</span><span>Linux</span><span>Android</span><span>Active Directory</span><span>Redes</span><span>Dominios</span><span>TPV</span><span>PDAs</span>
+              </div>
+            </article>
+            <article class="skill-block">
+              <h3>Herramientas</h3>
+              <div class="skill-tags">
+                <span>Git</span><span>Visual Studio Code</span><span>IntelliJ IDEA</span><span>Paquete Office</span><span>Codyshop</span>
+              </div>
+            </article>
+            <article class="skill-block">
+              <h3>Idiomas</h3>
+              <div class="skill-tags">
+                <span>Espa&ntilde;ol nativo</span><span>Rumano nativo</span><span>Ingl&eacute;s B1 FCE</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="educacion" class="section education-section">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Educaci&oacute;n</p>
+            <h2>Formaci&oacute;n en desarrollo, web full stack e inteligencia artificial.</h2>
+          </div>
+          <div class="education-list">
+            <article class="education-item">
+              <span>2025 - 2026</span>
+              <h3>Evolve Academy</h3>
+              <p>M&aacute;ster en Desarrollo Web Full Stack e Inteligencia Artificial</p>
+            </article>
+            <article class="education-item">
+              <span>2022 - 2024</span>
+              <h3>Campus FP</h3>
+              <p>Desarrollador de Aplicaciones Multiplataforma</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section contact-section">
+        <div class="container contact-layout reveal">
+          <div class="contact-panel">
+            <p class="eyebrow">Contacto</p>
+            <h2>Listo para aportar en desarrollo, soporte IT u operaciones.</h2>
+            <p>Si buscas un perfil junior con base t&eacute;cnica, experiencia real y capacidad para resolver problemas de principio a fin, escr&iacute;beme y hablamos.</p>
+            <div class="contact-actions">
+              <a class="contact-link" href="tel:+34658686380">+34 658 686 380</a>
+              <a class="contact-link" href="mailto:sabin.maniuk@gmail.com">sabin.maniuk@gmail.com</a>
+              <a class="contact-link" href="https://www.linkedin.com/in/sabin-maniuc/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="contact-link" href="https://github.com/sabinmaniuc" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+          <form class="contact-form" aria-label="Formulario de contacto">
+            <label>
+              <span>Nombre</span>
+              <input type="text" name="nombre" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span>Mensaje</span>
+              <textarea name="mensaje" rows="5" required></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>&copy; <span id="year"></span> Sabin Maniuc</span>
+        <a href="#inicio">Volver arriba</a>
+      </div>
+    </footer>
+  </div>
 
   <script src="/scripts/main.js" defer></script>
 </body>

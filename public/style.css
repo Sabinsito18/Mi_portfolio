@@ -55,7 +55,7 @@ img {
   z-index: 10;
   border-bottom: 1px solid var(--line);
   background: rgba(7, 17, 15, 0.82);
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(217px);
 }
 
 .header__inner {
